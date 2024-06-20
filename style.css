@@ -18,7 +18,7 @@ header .logo {
     position: absolute;
     left: 10px;
     top: 10px;
-    width: 50px;  /* Adjusted width */
+    width: 30px;  /* Smaller width */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -69,15 +69,15 @@ footer {
 }
 
 .teacher-photo {
-    width: 80%;  /* Use a percentage for responsiveness */
-    max-width: 150px; /* Maximum width for larger screens */
+    width: 90%;  /* Use a percentage for responsiveness */
+    max-width: 375px; /* Maximum width for iPhone screens */
     height: auto; /* Maintain aspect ratio */
     border-radius: 50%;
 }
 
 .qr-code {
-    width: 80%;  /* Use a percentage for responsiveness */
-    max-width: 150px; /* Maximum width for larger screens */
+    width: 90%;  /* Use a percentage for responsiveness */
+    max-width: 375px; /* Maximum width for iPhone screens */
     height: auto; /* Maintain aspect ratio */
 }
 
