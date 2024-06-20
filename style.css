@@ -11,6 +11,15 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;  /* Adjusted width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header h1 {
@@ -48,31 +57,34 @@ footer {
     bottom: 0;
 }
 
-form {
+.teacher-profile {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
 }
 
-form label {
-    margin: 5px 0;
+.teacher {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.teacher-photo {
+    width: 80%;  /* Use a percentage for responsiveness */
+    max-width: 150px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
 }
 
-form button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.qr-code {
+    width: 80%;  /* Use a percentage for responsiveness */
+    max-width: 150px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
 }
 
-form button:hover {
-    background-color: #555;
+/* Media Query for Larger Screens */
+@media (min-width: 600px) {
+    .teacher-profile {
+        flex-direction: row; /* Side by side on larger screens */
+        justify-content: space-around;
+    }
 }
